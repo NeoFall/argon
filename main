@@ -23,7 +23,7 @@ import os
 import sys
 import termcolor
 from termcolor import colored, cprint
-words = "WARNING! This verson of ARGON is just a demo. to play the full verson, go to \n www.github.com/Neofall/argon. "
+words = "WARNING! This verson of ARGON is just a demo. The full verson includes MORE choices, a bigger story, sidequests, more NPC's, another town, and MUCH MORE!  to play the full verson, go to \n www.github.com/Neofall/argon. "
 for char in words:
     sleep(0.034)
     sys.stdout.write(char)
@@ -46,10 +46,50 @@ if demochoice == "y":
     print("|____| |____||____| |___|`._____.'  `.___.'|_____|\____| ")
     print("               The legend begins....\n                   ")
     # save for use--> cprint('Type "start" to start!', 'red', attrs=['blink'])
-    start = input("Type 'Start' to start!")
+    start = input("Type 'Start' to start! ")
     if start == "Start":
       os.system('cls' if os.name == 'nt' else 'clear')
       print("Loading...")
       os.system('cls' if os.name == 'nt' else 'clear')
       time.sleep(2)
-      print("You open your eyes and glance around to see you're on a small \n dune on a beach \n that streches off into the distance.")
+      print("You open your eyes and glance around to see you're on a")
+      print("small dune. As you sit up, ")
+      sleep(0.3)
+      print(" you realize you're on a beach")
+      sleep(0.3)
+      print("that streches off into the distance.")
+      sleep(0.3)
+      print("You see a wirey middle aged man walking towards you.")
+      sleep(0.3)
+      print("He walks up to you and smiles.")
+      sleep(0.3)
+      teatalk = input("Do you walk up to him? (y/n) ")
+      if teatalk == "y":
+        print("You walk up to him and smile.")
+        sleep(0.3)
+      else:
+        print("You turn around and run away from him")
+        sleep(0.3)
+        print("as you do, you trip over some driftwood.")
+        sleep(2)
+        teatalk = input ("Do you get up and keep running or go back and talk to him? (run/talk)")
+        if teatalk == "run":
+        elif teatalk == "talk"
+          print("You walk up to him and smile.")
+          sleep(0.5)
+         print("Hello there, I'm Tea. I've been looking for you. I've heard you're looking for Argon? (yes/no/more/run")
+         if teatalk == "yes":
+           print("Good, good. I'm looking for Argon too")
+         elif teatalk == "no":
+         elif teatalk == "more":
+         teatalk2=input("Argon? The holy shrine on top of the mount Rasob? no one knows where it is? (yes/no/more)")
+          if teatalk2="yes":
+        print("test")
+         elif teatalk == "run":
+
+else:
+  sleep(.7)
+  print("OK, Exiting.")
+  sleep(0.7)
+  os.system('cls' if os.name == 'nt' else 'clear')
+  exit()
