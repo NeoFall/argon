@@ -1,0 +1,218 @@
+#THIS IS BROKEN RUN THE OTHER ONE
+#      _       _______      ______     ___   ____  _____  
+#     / \     |_   __ \   .' ___  |  .'   `.|_   \|_   _| 
+#    / _ \      | |__) | / .'   \_| /  .-.  \ |   \ | |   
+#   / ___ \     |  __ /  | |   ____ | |   | | | |\ \| |   
+# _/ /   \ \_  _| |  \ \_\ `.___]  |\  `-'  /_| |_\   |_  
+#|____| |____||____| |___|`._____.'  `.___.'|_____|\____| 
+#The legend begins....
+#
+# Author: NEOFALL
+#
+# Contact: bentreework@gmail.com
+#
+# Last Modified: THE DATE
+#
+# Copyright (c) NEOFALL, 2023
+# (Read the LICENSE for more details.)
+# https://www.opensource.org/licenses/mit-license.php
+# Want the reposritry?
+# https://github.com/NeoFall/argon
+import time
+from time import sleep
+import os
+import sys
+import termcolor
+from termcolor import cprint
+#########################################################
+def demoending():
+  print("Tea takes you across town and up over a hill,")
+sleep(0.5)
+print("Through a large forest and some plains.")
+sleep(0.5)
+print("All the while explaining to you what's going on.")
+basiclore
+#########################################################
+def basiclore():
+  print("He Tells the story in full detali")
+  sleep(0.4)
+  lore = "As you may know, we live on an island. A group of settlers, well, settled down here. They had 'Supposedly' found a small Shrine hidden somwhere on the falcose mountains, and had also descovered it's secrets. After spending a few days, they decide to head back to the town and told everyone else that had come and settled, but when they went back up, it wasn't there. That was 237 years ago. For my intire life, i've been trying to find it, but alas, nothing. When i heard you arrived here, i wanted to come get you before you wandered off or left."
+  for char in lore:
+    sleep(0.4)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    quit()
+    
+#########################################################
+def shopwait():
+   print("All of them are closed right now,")
+   print("So there's not much to do as of now..")
+   goback = input("Do you want to go back to town? (y/n)")
+   if goback == "y":
+    print("You walk back to town.")
+    town()
+   else:
+    print("You keep waiting.")
+    town()
+####################################################
+words = "WARNING! This verson of ARGON is just a demo. The full verson includes MORE choices, a bigger story, sidequests, more NPC's, another town, and MUCH MORE!  to play the full verson, go to \n www.github.com/Neofall/argon. "
+for char in words:
+    sleep(0.034)
+    sys.stdout.write(char)
+    sys.stdout.flush()  
+demochoice = input("Do you want to play the demo? (y/n)")
+if demochoice == "y":
+    print("Starting demo...")
+    time.sleep(1)
+    print("Loading demo...")
+    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
+    print("      _       _______      ______     ___   ____  _____  ")
+    print("     / \     |_   __ \   .' ___  |  .'   `.|_   \|_   _| ")
+    print("    / _ \      | |__) | / .'   \_| /  .-.  \ |   \ | |   ")
+    print("   / ___ \     |  __ /  | |   ____ | |   | | | |\ \| |   ")
+    print(" _/ /   \ \_  _| |  \ \_\ `.___]  |\  `-'  /_| |_\   |_  ")
+    print("|____| |____||____| |___|`._____.'  `.___.'|_____|\____| ")
+    print("               The legend begins....\n                   ")
+    # save for use--> cprint('Type "start" to start!', 'red', attrs=['blink'])
+    start = input("Type 'Start' to start! ")
+    if start == "Start":
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading.")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading..")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading...")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading.")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading..")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading...")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading.")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading..")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading...")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading.")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading..")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading...")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading.")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading..")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading...")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading.")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading..")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      print("loading...")
+      sleep(0.5)
+      os.system('cls' if os.name == 'nt' else 'clear')
+      time.sleep(2)
+      name = input("What is your name? ")
+     
+      print("You open your eyes and glance around to see you're on a")
+      print("small dune. As you sit up, ")
+      sleep(0.3)
+      print(" you realize you're on a beach")
+      sleep(0.3)
+      print("that streches off into the distance.")
+      sleep(0.3)
+      print("You see a wirey middle aged man walking towards you.")
+      sleep(0.3)
+      print("He walks up to you and smiles.")
+      teatalk = input("Do you walk up to him? (y/n) ")
+      if teatalk == "y":
+        print("Hi " + name + ", I'm Tea. I've been looking for you. ")
+        sleep(0.3)
+        print(" I know this is rushed, but you'll need to go with me.")
+        sleep(0.5)
+      gowith1 = input("Do you go with him? (y/n)")
+      if gowith1 == "y":
+         print("You walk over to the town with him")
+         sleep(1)
+         def town():
+          os.system('cls' if os.name == 'nt' else 'clear')
+          print("Now where do you want to go?")
+          print("1. Beach (1)")
+          print("2. Shops (2)")
+          maintown = input("3. Keep following Tea (3)")
+         
+          if maintown == "1":
+             print("You walk to the beach and decide to walk around.")
+             print("You walk around the beach and see a dock.")
+             print("There's not much here.")
+             goback = input("Do you want to go back to town? (y/n)")
+             if goback == "y":
+              print("You walk back to town.")
+             else:
+               print("So you want the easter egg? Fine. ")
+               print("So i've set this thing, right?")
+               print("where it will wait exactly 12 years (378432000 seconds), ")
+               print("then give you a secret easter egg. Good luck! ")
+               sleep(378432000)
+               print("why do you waste your time like this?")
+               sleep(0.6)
+               print("oops, gotta go.")
+               quit()
+               town()    
+          elif maintown == "2":
+            print("You walk to the shops and decide to walk around.")
+            shopwait()
+            town()
+          elif maintown == "3":
+            demoending()
+
+        town()
+            
+          
+      else:
+        print("You turn around and run away from him")
+        sleep(0.3)
+        print("as you do, you trip over some driftwood.")
+        sleep(2)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        youdied = "You Died."
+        print(youdied)
+        for char in youdied:
+          sleep(0.4)
+          sys.stdout.write(char)
+          sys.stdout.flush()
+          restart = "You can restart if you wish."
+          for char in restart:
+              sleep(0.4)
+              sys.stdout.write(char)
+              sys.stdout.flush()
+              quit()
+
+
+else:
+  sleep(.7)
+  print("OK, Exiting.")
+  sleep(0.7)
+  os.system('cls' if os.name == 'nt' else 'clear')
+  exit()
