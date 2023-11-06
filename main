@@ -1,3 +1,4 @@
+#Welcome to
 #      _       _______      ______     ___   ____  _____  
 #     / \     |_   __ \   .' ___  |  .'   `.|_   \|_   _| 
 #    / _ \      | |__) | / .'   \_| /  .-.  \ |   \ | |   
@@ -10,33 +11,151 @@
 #
 # Contact: bentreework@gmail.com
 #
-# Last Modified: THE DATE
+# Last Modified: no one cares
 #
 # Copyright (c) NEOFALL, 2023
 # (Read the LICENSE for more details.)
 # https://www.opensource.org/licenses/mit-license.php
-# Want the reposritry?
+# Want the reposiritry?
 # https://github.com/NeoFall/argon
 import time
 from time import sleep
 import os
 import sys
 import termcolor
-from termcolor import colored, cprint
-words = "WARNING! This verson of ARGON is just a demo. The full verson includes MORE choices, a bigger story, sidequests, more NPC's, another town, and MUCH MORE!  to play the full verson, go to \n www.github.com/Neofall/argon. "
-for char in words:
-    sleep(0.034)
+from termcolor import cprint
+#########################################################
+def demoending():
+  print("Tea takes you across town and up over a hill,")
+  sleep(0.5)
+  print("Through a large forest and some plains.")
+  sleep(0.5)
+  print("All the while explaining to you what's going on.")
+  print("He Tells the story in full detail")
+  sleep(0.4)
+  lore = "As you may know, we live on an island. A group of settlers, well, settled down here. They had 'Supposedly' found a small Shrine hidden somwhere on the falcose mountains, and had also descovered it's secrets. After spending a few  days, they decide to head back to the town and told everyone else that had come and settled, but when they went back up, it wasn't there. That was 237 years ago. For my intire life, i've been trying to find it, but alas, nothing. When i heard you arrived here, i wanted to come get you before you wandered off or left. He proceeds to take you into the vally before stopping abruptly. "
+  for char in lore:
+    sleep(0.02)
     sys.stdout.write(char)
     sys.stdout.flush()
-   
+  sleep(10)
+  demoend = "A large mettalic voice comes from his throat, saying 'I'm sorry, but this is the end. The end of the demo, atleast. Please get the full game to continue, or even- code it yourself."
+  sleep(5)
+  os.system('cls')
+  print("                            ,--.")
+  print("                           {    }")
+  print("                           K,   }")
+  print("                          /  ~Y`")
+  print("                     ,   /   /")
+  print("                    {_'-K.__/")
+  print("                      `/-.__L._")
+  print("                      /  ' /`\_}")
+  print("                     /  ' /")
+  print("             ____   /  ' /")
+  print("      ,-'~~~~    ~~/  ' /_")
+  print("    ,'             ``~~~  ',")
+  print("   (                        Y")
+  print("  {                         I")
+  print(" {      -                    `,")
+  print(" |       ',                   )")
+  print(" |        |   ,..__      __. Y")
+  print(" |    .,_./  Y ' / ^Y   J   )|")
+  print(" \           |' /   |   |   ||")
+  print("  \          L_/    . _ (_,.'(")
+  print("   \,   ,      ^^""' / |      )")
+  print("     \_  \          /,L]     /")
+  print("       '-_~-,       ` `   ./`")
+  print("          `'{_            )")
+  print("              ^^\..___,.--`")
+  print("           You may restart if you wish.")
+  for char in demoend:
+    sleep(0.078)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    
+#########################################################
+def youdied():
+  os.system('cls' if os.name == 'nt' else 'clear')
+  youdied = "You Died."
+  print(youdied)
+  for char in youdied:
+    sleep(0.4)
+    sys.stdout.write(char)
+    sys.stdout.flush()
+    restart = "You may restart if you wish."
+  for char in restart:
+      sleep(0.4)
+      sys.stdout.write(char)
+      sys.stdout.flush()
+      quit()
+#########################################################
+def night():
+  print("after waking up from an OK sleep, you roll over to a large voice in your head that says 'I'm sorry, but this is the end. The end of the demo, atleast. Please get the full game to continue, or even- code it yourself.'")
+  sleep(5)
+  os.system('cls')
+  print("                            ,--.")
+  print("                           {    }")
+  print("                           K,   }")
+  print("                          /  ~Y`")
+  print("                     ,   /   /")
+  print("                    {_'-K.__/")
+  print("                      `/-.__L._")
+  print("                      /  ' /`\_}")
+  print("                     /  ' /")
+  print("             ____   /  ' /")
+  print("      ,-'~~~~    ~~/  ' /_")
+  print("    ,'             ``~~~  ',")
+  print("   (                        Y")
+  print("  {                         I")
+  print(" {      -                    `,")
+  print(" |       ',                   )")
+  print(" |        |   ,..__      __. Y")
+  print(" |    .,_./  Y ' / ^Y   J   )|")
+  print(" \           |' /   |   |   ||")
+  print("  \          L_/    . _ (_,.'(")
+  print("   \,   ,      ^^""' / |      )")
+  print("     \_  \          /,L]     /")
+  print("       '-_~-,       ` `   ./`")
+  print("          `'{_            )")
+  print("              ^^\..___,.--`")
+  print("           You may restart if you wish.")
   
+#########################################################
+def demoend2():
+  print("You walk thoughout the forest, and into some plains. It's getting dark. What are you going to do?")
+  input = camp("Go back into the forests and build a lean-too(1) Try to wander over to the mountains in time, as you can see a house in the distace(2) Or just sleep in the grass.(3)")
+  if input == "1":
+    print("You manage to get back to the forests, and build a lean-too. After it's done, you settle down for the night, and close your eyes.")
+    night()
+  elif input == "2":
+    print("You decide to wander over to the mountains, but halfway though, you trip over a ditch, knocking you out.")
+    night()
+  elif input == "3":
+    print("You decide to sleep in the grass, so you lie down and close your eyes.")
+    night()
+#########################################################
+def shopwait():
+   print("All of them are closed right now,")
+   print("So there's not much to do as of now..")
+   goback = input("Do you want to go back to town? (y/n)")
+   if goback == "y":
+    print("You walk back to town.")
+    town()
+   else:
+    print("You keep waiting.")
+    town()
+####################################################
+words = "WARNING! This verson of ARGON is just a demo. The full verson includes MORE choices, a bigger story, sidequests, more NPC's, another town, and MUCH MORE!  to play the full verson, go to \n www.github.com/Neofall/argon. "
+for char in words:
+    sleep(0.094)
+    sys.stdout.write(char)
+    sys.stdout.flush()  
 demochoice = input("Do you want to play the demo? (y/n)")
 if demochoice == "y":
     print("Starting demo...")
     time.sleep(1)
     print("Loading demo...")
-    time.sleep(1)
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('cls')
     os.system('cls' if os.name == 'nt' else 'clear')
     print("      _       _______      ______     ___   ____  _____  ")
     print("     / \     |_   __ \   .' ___  |  .'   `.|_   \|_   _| ")
@@ -48,10 +167,66 @@ if demochoice == "y":
     # save for use--> cprint('Type "start" to start!', 'red', attrs=['blink'])
     start = input("Type 'Start' to start! ")
     if start == "Start":
-      os.system('cls' if os.name == 'nt' else 'clear')
-      print("Loading...")
-      os.system('cls' if os.name == 'nt' else 'clear')
-      time.sleep(2)
+      def loading():
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading.")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading..")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading...")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading.")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading..")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading...")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading.")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading..")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading...")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading.")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading..")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading...")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading.")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading..")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading...")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading.")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading..")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        print("loading...")
+        sleep(0.5)
+        os.system('cls' if os.name == 'nt' else 'clear')
+        time.sleep(2)
+      loading()
+      name = input("What is your name? ")
+     
       print("You open your eyes and glance around to see you're on a")
       print("small dune. As you sit up, ")
       sleep(0.3)
@@ -62,30 +237,118 @@ if demochoice == "y":
       print("You see a wirey middle aged man walking towards you.")
       sleep(0.3)
       print("He walks up to you and smiles.")
-      sleep(0.3)
       teatalk = input("Do you walk up to him? (y/n) ")
       if teatalk == "y":
-        print("You walk up to him and smile.")
+        print("Hi " + name + ", I'm Tea. I've been looking for you. ")
         sleep(0.3)
+        print(" I know this is rushed, but you'll need to go with me.")
+        sleep(0.5)
+      gowith1 = input("Do you go with him? (y/n)")
+      if gowith1 == "y":
+         print("You walk over to the town with him")
+         sleep(1)
+         def town():
+          os.system('cls' if os.name == 'nt' else 'clear')
+          print("Now where do you want to go?")
+          print("1. Beach (1)")
+          print("2. Shops (2)")
+          print("3. Keep following Tea (3)")
+          maintown = input("4. Go off on your own. (4)")
+         
+          if maintown == "1":
+             print("You walk to the beach and decide to walk around.")
+             print("You walk around the beach and see a dock.")
+             print("There's not much here.")
+             goback = input("Do you want to go back to town? (y/n)")
+             if goback == "y":
+              print("You walk back to town.")
+             else:
+               print("So you want the easter egg? Fine. ")
+               print("So i've set this thing, right?")
+               print("where it will wait exactly 12 years (378432000 seconds), ")
+               print("then give you a secret easter egg. Good luck! ")
+               sleep(378432000)
+               print("why do you waste your time like this?")
+               sleep(0.6)
+               print("oops, gotta go.")
+               quit()
+               town()    
+          elif maintown == "2":
+            print("You walk to the shops and decide to walk around.")
+            shopwait()
+            town()
+          elif maintown == "3":
+            demoending()
+          elif maintown == "4":
+           sleep(0.4)
+           print('you decide to not trust this "tea" guy, and maybe you should leave and go off on your own. maybe explore a bit!')
+           os.system('cls')
+           loading()
+           print("You Realize there's nothing you need to take, as you woke up on this island with no explination.")
+           sleep(1)
+           print("you sit and think for a second, trying to recall where you came from!")
+           sleep(1)
+           print("In all this exitement, you totally forgot somthing that happened just like 10 minutes ago!")
+           sleep(1)
+           print("after coming up empty-handed, you wander off into the forest!")
+           sleep(1)
+           print("after about an hour or so, you come across a small wooden hut hidden inside a large tree.")
+           sleep(1)
+           hut = input("Do you go inside? (y/n)")
+           if hut == "y":
+              print("You peek inside")
+              sleep(0.4)
+              print("oooh! there's a chest!")
+              sleep(0.4)
+              chest1 = input("Do you open the chest? (y/n)")
+              if chest1 == "y":
+                print("Suddenly, a muscular guy jumps out of the hut and trys to attack you!")
+                fight=input("Do you fight or run? (f/r)")
+                if fight == "f":
+                  print("You fight the muscular guy!")
+                  sleep(0.4)
+                  print("He attacks and you block!")
+                  sleep(0.4)
+                  fight2=input("Do you attack or block (f/b)")
+                  if fight2 == "f":
+                    print("You try to fight back but he stabs you!")  
+                    sleep(3)
+                    youdied()
+                  elif(fight2 == "b"):
+                    print("You Parry his switchblade, stunning him! you then run away,")
+                    print("but grab somthing shiney on your way out.")
+                    sleep(0.4)
+                    print("You run and run, until you're out of breath.")
+                    sleep(2)
+                    print("You put your hand in your pocket and come out with.... a shortsword! this will help protect you!")
+                    sleep(0.6)
+                    print("you continue walking...")
+                    sleep(3)
+                    demoend2()
+                elif fight == "r":
+                  print("You try to run away, but the muscular guy grabs your arm and stabs you with a switchblade.")
+                  sleep(3)
+                  os.system('cls')
+                  youdied()
+              elif chest1 == "n":
+                print("You decide to leave the chest alone. it might be a trap.")
+                print("you continue on your journey.")
+                demoend2()
+              else:
+                print("your character couldnt understand what you are saying, so he had a stroke and died.")
+                youdied()
+            
+
+         town()
+            
+          
       else:
         print("You turn around and run away from him")
         sleep(0.3)
         print("as you do, you trip over some driftwood.")
         sleep(2)
-        teatalk = input ("Do you get up and keep running or go back and talk to him? (run/talk)")
-        if teatalk == "run":
-        elif teatalk == "talk"
-          print("You walk up to him and smile.")
-          sleep(0.5)
-         print("Hello there, I'm Tea. I've been looking for you. I've heard you're looking for Argon? (yes/no/more/run")
-         if teatalk == "yes":
-           print("Good, good. I'm looking for Argon too")
-         elif teatalk == "no":
-         elif teatalk == "more":
-         teatalk2=input("Argon? The holy shrine on top of the mount Rasob? no one knows where it is? (yes/no/more)")
-          if teatalk2="yes":
-        print("test")
-         elif teatalk == "run":
+        youdied()
+
 
 else:
   sleep(.7)
